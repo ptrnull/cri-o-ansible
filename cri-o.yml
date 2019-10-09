@@ -259,8 +259,8 @@
     - name: systemd dropin for kubeadm
       copy:
         content: |
-              "[Service]
-               Environment=-/etc/default/kubelet"
+              [Service]
+              Environment=-/etc/default/kubelet
         dest: /etc/systemd/system/kubelet.service.d/0-crio.conf
         force: yes
 
